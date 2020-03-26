@@ -1,5 +1,6 @@
 <?php
 
+//ff
 $webservername = $_SERVER["SERVER_NAME"];
 $http_method = $_SERVER["REQUEST_METHOD"];
 $http_query = $_SERVER["QUERY_STRING"];
