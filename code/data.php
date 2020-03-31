@@ -1,9 +1,6 @@
 <?php
 
-$result = $_SERVER["REQUEST_METHOD"];
 
-echo json_encode($result);
-return;
 
 $myObj = new stdClass();
 $myObj->productList = array();
