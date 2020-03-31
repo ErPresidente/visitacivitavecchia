@@ -1,10 +1,12 @@
 <?php
 
-$webservername = $_SERVER["SERVER_NAME"];
-$http_method = $_SERVER["REQUEST_METHOD"];
-$http_query = $_SERVER["QUERY_STRING"];
+$result = $_SERVER["REQUEST_METHOD"];
 
-echo json_encode($webservername);
+//$webservername = $_SERVER["SERVER_NAME"];
+//$http_method = $_SERVER["REQUEST_METHOD"];
+//$http_query = $_SERVER["QUERY_STRING"];
+
+echo json_encode($result);
 return;
 
 $myObj = new stdClass();
