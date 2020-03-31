@@ -2,10 +2,6 @@
 
 $result = $_SERVER["REQUEST_METHOD"];
 
-//$webservername = $_SERVER["SERVER_NAME"];
-//$http_method = $_SERVER["REQUEST_METHOD"];
-//$http_query = $_SERVER["QUERY_STRING"];
-
 echo json_encode($result);
 return;
 
@@ -14,7 +10,7 @@ $myObj->productList = array();
 
 
 
-$servername = "visitacivitavecchia_db_1";
+$servername = "queen.visitacivitavecchia_db_1";
 $username="user";
 $password="password";
 $dbname="db";
