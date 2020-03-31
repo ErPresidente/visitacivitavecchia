@@ -7,7 +7,7 @@ $myObj->productList = array();
 
 
 
-$servername = "queen.visitacivitavecchia_db_1";
+$servername = "visitacivitavecchia_db_1";
 $username="user";
 $password="password";
 $dbname="db";
