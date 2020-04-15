@@ -1,5 +1,9 @@
 <?php
 
+$query_string = $_SERVER["QUERY_STRING"];
+parse_str($query_string, $query);
+$poi = $query["poi"];
+
 
 
 $myObj = new stdClass();
@@ -20,7 +24,7 @@ if($conn->connection_error){
     die("connection field: ".$conn->connection_error);
 }
 
-$result = $conn->query("SELECT * FROM `products` WHERE name='La Madonnina';");
+$result = $conn->query("SELECT * FROM `products` WHERE name='".$poi."'");
 
 if($result->num_rows>0){
     foreach($result as $row){
@@ -39,6 +43,7 @@ if($result->num_rows>0){
     }
 }
 
+header('Content-Type: application/json');
 
 echo json_encode($myObj);
 
