@@ -24,7 +24,7 @@ if($conn->connection_error){
     die("connection field: ".$conn->connection_error);
 }
 
-$result = $conn->query("SELECT * FROM `products` WHERE name='".$poi."'");
+$result = $conn->query("SELECT * FROM `products` WHERE `name` = 'La Madonnina'");
 
 if($result->num_rows>0){
     foreach($result as $row){
